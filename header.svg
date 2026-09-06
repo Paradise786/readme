@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#344338" />
+      <stop offset="50%" stop-color="#28352c" />
+      <stop offset="100%" stop-color="#1d2620" />
+    </linearGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#55916e" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#55916e" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="1200" height="320" rx="18" ry="18" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Base Background -->
+    <rect width="1200" height="320" fill="url(#bgGrad)" />
+    
+    <!-- Ambient Center Glow -->
+    <rect width="1200" height="320" fill="url(#centerGlow)" />
+
+    <!-- Subtle Tech Grid Lines (Ultra subtle) -->
+    <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+      <line x1="0" y1="80" x2="1200" y2="80" />
+      <line x1="0" y1="160" x2="1200" y2="160" />
+      <line x1="0" y1="240" x2="1200" y2="240" />
+      <line x1="300" y1="0" x2="300" y2="320" />
+      <line x1="600" y1="0" x2="600" y2="320" />
+      <line x1="900" y1="0" x2="900" y2="320" />
+    </g>
+
+    <!-- Deep Wave Layer -->
+    <path d="M 0,320 L 0,275 C 150,250 320,295 480,270 C 640,245 820,285 980,265 C 1090,250 1160,260 1200,268 L 1200,320 Z" 
+          fill="#2b3a2f" opacity="0.65" />
+
+    <!-- Foreground Wave Layer -->
+    <path d="M 0,320 L 0,290 C 200,265 380,305 560,280 C 740,255 920,295 1080,275 C 1140,268 1180,272 1200,276 L 1200,320 Z" 
+          fill="#3e5244" opacity="0.75" />
+
+    <!-- Accent Micro Dots -->
+    <circle cx="150" cy="70" r="2.5" fill="#69a380" opacity="0.4" />
+    <circle cx="1050" cy="70" r="2.5" fill="#69a380" opacity="0.4" />
+    <circle cx="1090" cy="95" r="1.5" fill="#69a380" opacity="0.3" />
+    <circle cx="110" cy="95" r="1.5" fill="#69a380" opacity="0.3" />
+
+    <!-- Title: Afeera Hameed -->
+    <text x="50%" y="145" 
+          text-anchor="middle" 
+          fill="#ffffff" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+          font-size="62" 
+          font-weight="800" 
+          letter-spacing="0.5" 
+          filter="url(#textShadow)">
+      Afeera Hameed
+    </text>
+
+    <!-- Subtitle -->
+    <text x="50%" y="195" 
+          text-anchor="middle" 
+          fill="#d8e6dc" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+          font-size="25" 
+          font-weight="400" 
+          letter-spacing="0.8">
+      AI  |  Generative AI  |  Agentic Systems  |  Software Development
+    </text>
+  </g>
+</svg>
